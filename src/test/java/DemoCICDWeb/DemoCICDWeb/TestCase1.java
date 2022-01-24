@@ -15,7 +15,7 @@ public class TestCase1 {
 		
 		driver.get("https://automationtalks.com/");
 		
-		System.out.println("Title is :->"+driver.getTitle());
+		System.out.println("Title here is :->"+driver.getTitle());
 		
 		Thread.sleep(5000);   
 		driver.close();
