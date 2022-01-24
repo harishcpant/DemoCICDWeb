@@ -10,12 +10,14 @@ public class TestCase1 {
 	
 	@Test
 	public void WebTest() throws InterruptedException {
+		
+		System.out.println("Running HTML Unit Driver..");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://automationtalks.com/");
 		
-		System.out.println("Title is :->"+driver.getTitle());
+		System.out.println("Title here is :->"+driver.getTitle());
 		
 		Thread.sleep(5000);   
 		driver.close();
